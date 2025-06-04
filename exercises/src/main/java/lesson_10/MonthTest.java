@@ -1,47 +1,59 @@
 package lesson_10;
+// =============================================================================
+// FILE 3: MonthTest.java - Demonstrates the Switch Statement
+// =============================================================================
 
+// The MonthTest class demonstrates the use of the 'switch' statement.
 public class MonthTest {
     public static void main(String[] args) {
         //*** SWITCH AND CASE IMPLEMENTATION ***
 
-        int month = 12; // Set the month to December
-        boolean isLeapYear = true; // Flag to determine if it's a leap year
+        int month = 13; // Set the month to December (for testing the switch statement).
+        boolean isLeapYear = true; // Flag to determine if it's a leap year.
 
-        // Switch statement checks the value of the 'month' variable
+        // Switch statement:
+        // Provides an alternative to a long chain of 'if-else if' statements
+        // when you want to perform different actions based on the value of a single variable.
         switch (month) {
-            // Months with 31 days
-            case 1:
-            case 3:
-            case 5:
-            case 7:
-            case 8:
-            case 12:
+            // 'case' labels represent possible values for the 'month' variable.
+            // Multiple 'case' labels can be grouped together if they should execute the same code.
+            // Here, cases 1, 3, 5, 7, 8, 12 all fall through to the same 'println' statement.
+            case 1: // January
+            case 3: // March
+            case 5: // May
+            case 7: // July
+            case 8: // August
+            case 12: // December
                 System.out.println("31 days in the month");
-                break;
+                break; // 'break' statement is crucial! It exits the switch block once a match is found.
+            // Without 'break', execution would "fall through" to the next case.
 
-            // February - check if leap year for day count
-            case 2:
-                if (isLeapYear) {
+            // February - requires an additional check for leap year.
+            case 2: // February
+                if (isLeapYear) { // Nested if-else statement within a switch case.
                     System.out.println("29 days in the month"); // Leap year case
                 } else {
                     System.out.println("28 days in the month"); // Non-leap year
                 }
-                break;
+                break; // Exit the switch after handling February.
 
-            // Months with 30 days
-            case 4:
-            case 6:
-            case 9:
-            case 11:
+            // Months with 30 days.
+            case 4: // April
+            case 6: // June
+            case 9: // September
+            case 11: // November
                 System.out.println("30 days in the month");
-                break;
+                break; // Exit the switch.
 
-            // If the month is not between 1 and 12
+            // The 'default' case is optional. It executes if none of the 'case' labels match the 'month' value.
             default:
                 System.out.println("Invalid month");
+                // No break needed here as it's the last statement in the switch.
         }
 
         //*** NESTED IF STATEMENT VERSION (commented out) ***
+        // This commented section shows an equivalent logic using nested if-else if statements.
+        // While functional, for many discrete values, a switch statement can be more readable and efficient.
         /*
         int month = 8;
         boolean isLeapYear = true;
