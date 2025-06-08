@@ -63,7 +63,7 @@ public class Lesson11 {
         yearlySales[3][3] = 2000; // Fourth row, fourth column
 
         // Example of iterating and printing a 2D array (using the initArray method below).
-        int sales[][] = new int[3][4]; // Declare and initialize a 3x4 2D array.
+        int[][] sales = new int[3][4]; // Declare and initialize a 3x4 2D array.
         int[][] salesArray = initArray(sales); // Call a helper method to populate the array.
         System.out.println("\nYearly sales by quarter beginning 2010:");
         // Nested for loops are typically used to iterate through 2D arrays.

@@ -8,10 +8,6 @@ public class ArgumentsTest {
     // The 'main' method signature 'String[] args' means it can accept an array of String arguments
     // when the program is run from the command line.
     public static void main(String[] args) {
-        // To run this:
-        // 1. Compile: javac ArgumentsTest.java
-        // 2. Run: java ArgumentsTest 10 20
-        // In this example, "10" becomes args[0] and "20" becomes args[1].
 
         // The following lines are commented out in your original code, but show direct access.
         // System.out.println("args[0] is " + args[0]); // Accesses the first argument.
