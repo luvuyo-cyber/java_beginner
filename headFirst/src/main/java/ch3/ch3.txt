@@ -1,0 +1,12 @@
+Page 60:
+-The value is null
+-pets[2] = pets[1];
+
+Page 63:
+A) The books are not instantiated
+B) We created an array of size 3, our while loop attempts to
+access and instantiate objects for indexes that are outside
+our range.
+Solutions:
+-change size of array or fix the while loop condition and
+how we increment

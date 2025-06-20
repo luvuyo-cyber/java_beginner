@@ -1,0 +1,14 @@
+Page 89:
+-Instance variables, getter, setter, method
+-Return
+-Return, argument
+-Encapsulation
+-Pass by value
+-Instance variables
+-Argument
+-Getter
+-Public
+-Method
+-Setter
+-Getter, Setter, Public, Private
+-Return

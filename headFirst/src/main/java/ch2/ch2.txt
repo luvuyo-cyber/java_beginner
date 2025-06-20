@@ -1,0 +1,13 @@
+Page 47:
+1. Object
+2. Class
+3. Method, Object
+4. Class, Object
+5. Instance Variable
+6. Class, Object
+7. Instance Variable, Method
+8. Object
+9. Class
+10. Instance Variable, Object
+11. Class
+12. Instance Variable, Object
